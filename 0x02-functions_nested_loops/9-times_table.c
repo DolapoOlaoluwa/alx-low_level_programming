@@ -21,7 +21,7 @@ void times_table(void)
 			}
 			else
 			{
-				_putchar((mul / 10)+ '0');
+				_putchar((mul / 10) + '0');
 			}
 			_putchar((mul % 10) + '0');
 			if (n == 9)
@@ -29,7 +29,6 @@ void times_table(void)
 				continue;
 			}
 			_putchar(',');
-			_putchar(' ');
 		}
 		_putchar('\n');
 	}

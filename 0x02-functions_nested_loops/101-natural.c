@@ -1,11 +1,11 @@
 #include <stdio.h>
 
 /**
- * print_sum_multiples - prints sum of multiple of 5 and 3
- * Return: nothing
+ * main - prints sum of multiple of 5 and 3
+ * Return: 0 always on succes
  */
 
-void main(void)
+int main(void)
 {
 	int result = 0;
 	int n = 0;
@@ -18,4 +18,5 @@ void main(void)
 		}
 	}
 	printf("%d\n", result);
+	return (0);
 }

@@ -8,7 +8,6 @@
 int main(void)
 {
 	int count = 1;
-	int sum = 0;
 	unsigned long fib1 = 0, fib2 = 1, next_fib;
 
 	for (; count <= 50; count++)

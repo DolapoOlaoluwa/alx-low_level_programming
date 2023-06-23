@@ -11,7 +11,7 @@ void print_times_table(int n)
 	int m, mul;
 	int num;
 
-	if ((n < 15) && (n > 0))
+	if ((n <= 15) && (n >= 0))
 	{
 		for (num = 0; num <= n; num++)
 		{
@@ -30,7 +30,7 @@ void print_times_table(int n)
 					_putchar((mul / 100) + '0');
 					_putchar(((mul / 10) % 10) + '0');
 				}
-				else if (mul < 100 && mul >= 10)
+				else if (mul <= 99 && mul >= 10)
 				{
 					_putchar((mul / 10) + '0');
 				}

@@ -12,23 +12,25 @@ void print_triangle(int size)
 
 	if (size > 0)
 	{
-		for (height = 0; height < size; height++)
+		for (height = 1; height <= size; height++)
 		{
-			for (base = 0; base < size; base++)
+			for (base = size - height; base > 0; base--)
 			{
-				if (base < size - 1 && height < size - 1)
-				{
-					_putchar(' ');
-				}
-				_putchar('#');
+				_putchar(' ');
 
 			}
 
-			if (height == size - 1)
+			for (base = 0; base < height; base++)
+			{
+				_putchar('#');
+			}
+
+			if (height == size)
 			{
 				continue;
 			}
 			_putchar('\n');
 		}
 	}
+	_putchar('\n');
 }

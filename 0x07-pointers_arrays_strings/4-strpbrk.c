@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strspn - gets the length of a prefix substring
+ * _strpbrk - gets the length of a prefix substring
  * @s: segment to return bytes from
  * @accept: the bytes to include
  * Return: a pointer to the byte in @s that matches one of the bytes in

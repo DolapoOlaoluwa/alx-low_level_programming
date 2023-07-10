@@ -45,6 +45,6 @@ int main(int argc, char *argv[])
 		printf("%d\n", coin);
 		return (0);
 	}
-	printf("Error\n", 0);
+	printf("Error\n");
 	return (1);
 }

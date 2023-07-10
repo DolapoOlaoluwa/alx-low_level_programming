@@ -9,10 +9,11 @@
 
 int main(int argc, char *argv[])
 {
-	int count;
+	int count = 0;
+	int i;
 	(void) argv;
 
-	for (count = 1; count < argc; count++)
+	for (i = 0; i < argc - 1; i++)
 	{
 		count += 1;
 	}

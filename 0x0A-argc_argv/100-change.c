@@ -1,3 +1,4 @@
+#include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -11,7 +12,8 @@
  */
 int main(int argc, char *argv[])
 {
-	int money, coin = 0;
+	int money;
+	int coin = 0;
 
 	if (argc == 2)
 	{
@@ -19,6 +21,7 @@ int main(int argc, char *argv[])
 		if (money < 0)
 		{
 			printf("%d\n", 0);
+			return (0);
 		}
 		if (money % 25 >= 0)
 		{
@@ -41,13 +44,12 @@ int main(int argc, char *argv[])
 			money = money % 2;
 		}
 		if (money % 1 >= 0)
-			coin += money / 1;
+			coin += money;
 		printf("%d\n", coin);
 		return (0);
 	}
 	else
-	{
-		printf("Error\n");
+	{	printf("Error\n");
 		return (1);
 	}
 }

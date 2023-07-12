@@ -10,16 +10,16 @@
 int **alloc_grid(int width, int height)
 {
 	int **new_array;
-	int i = 0;
+	int i = 0, j;
 
 	if (width <= 0 || height <= 0)
 		return (NULL);
-	new_array = calloc(height, sizeof(*new_array));
+	new_array = malloc(height * sizeof(*new_array));
 	if (new_array == NULL)
 		return (NULL);
 	for (;  i < height; i++)
 	{
-		new_array[i] = calloc(width, sizeof(**new_array));
+		new_array[i] = malloc(width * sizeof(**new_array));
 
 		if (new_array[i] == NULL)
 		{
@@ -29,5 +29,7 @@ int **alloc_grid(int width, int height)
 			return (NULL);
 		}
 	}
+	for (i = 0; j < width, j++)
+		new_array[i][j] = 0;
 	return (new_array);
 }

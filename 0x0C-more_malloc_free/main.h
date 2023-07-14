@@ -15,6 +15,6 @@ void *mul_array(char *a1, int len1, char a2, char *a3, int lena);
 void *_calloc(unsigned int nmemb, unsigned int size);
 int _isNumber(char *argv);
 int _atoi_digit(char x);
-
+int _putchar(char c);
 
 #endif /*MAIN_H*/

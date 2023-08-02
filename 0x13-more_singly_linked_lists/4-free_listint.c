@@ -1,17 +1,20 @@
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
 #include "lists.h"
 
 /**
- * free_listint - frees a listint_t list
- * @head: The head pointer to the node.
+ * free_listint - To print fxn that frees a listint_t list
+ * @head: The head of list
  */
 void free_listint(listint_t *head)
 {
-	listint_t *ptr;
+	listint_t *next;
 
 	while (head != NULL)
 	{
-		ptr = head->next;
+		next = head->next;
 		free(head);
-		head = ptr;
+		head = next;
 	}
 }

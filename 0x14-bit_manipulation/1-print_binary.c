@@ -1,5 +1,11 @@
 #include "main.h"
 
+/**
+ * print_binary - prints binary of an unsigned integer.
+ * @n: unsigned integer.
+ */
+
+
 void print_binary(unsigned long int n)
 {
 	if (n > 1)

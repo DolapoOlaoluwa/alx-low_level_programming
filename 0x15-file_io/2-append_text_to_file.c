@@ -20,7 +20,7 @@ int append_text_to_file(const char *filename, char *text_content)
 	if (text_content)
 	{
 		written_bytes = write(fd, text_content, strlen(text_content));
-		if (bytes == -1)
+		if (written_bytes == -1)
 			return (-1);
 	}
 

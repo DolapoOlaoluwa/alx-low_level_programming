@@ -1,6 +1,7 @@
 #ifndef MAIN_H
 #define MAIN_H
 
+#define BUF_SIZE 1024
 #define USAGE "Usage: cp file_from file_to\n"
 #define ERR_READ "Error: Can't read from file %s\n"
 #define ERR_WRITE "Error: Can't write to %s\n"

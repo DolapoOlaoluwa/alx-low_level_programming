@@ -13,7 +13,7 @@ int _strlen(const char *s)
 
 	while (s[length] != '\0')
 	{
-		leth++;
+		length++;
 	}
 	return (length);
 }
